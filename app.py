@@ -2,7 +2,6 @@
 from PIL import Image
 import streamlit as st
 import cv2
-import maze
 
 #EDA Pkgs
 import pandas as pd 
@@ -170,13 +169,13 @@ def main():
 	"""Diabetes Prediction App"""
 	html_temp = """
 		<div style="background-color:navy;padding:10px;border-radius:10px">
-		<h1 style="color:white;text-align:center;">Echidna AI</h1>
+		<h1 style="color:white;text-align:center;">ECHIDNA AI</h1>
 		<h5 style="color:white;text-align:center;">Diabetes Prediction WEB APP</h5>
 		</div>
 		"""
 
 	components.html(html_temp)
-	image = Image.open('C:/Users/Adila/Documents/hep_app/LOGO.png')
+	image = Image.open('./echidna1.png')
 	st.image(image, use_column_width=True)
 
 	menu = ["Home", "Login", "SignUp", "Book An Appointment", "Profile Report", "About", "Privacy Policy"]
@@ -232,7 +231,6 @@ def main():
 					st.dataframe(df)
 
 					df['class'].value_counts().plot(kind='bar')
-					st.pyplot()
 
 					#Freq Dist Plot
 					freq_df = pd.read_csv("data/freq_df_hepatitis_dataset.csv")
