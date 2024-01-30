@@ -2,7 +2,7 @@
 from PIL import Image
 import streamlit as st
 import cv2
-
+from pydantic_settings import BaseSettings
 #EDA Pkgs
 import pandas as pd 
 import numpy as np 

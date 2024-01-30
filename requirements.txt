@@ -1,0 +1,12 @@
+streamlit
+pandas
+pandas-profiling
+pydantic
+pydantic-settings
+Pillow
+opencv-python
+numpy
+streamlit-pandas-profiling
+joblib
+matplotlib
+bcrypt
